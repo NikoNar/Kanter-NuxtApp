@@ -1,14 +1,16 @@
 <template>
-  <div class="container-fluid mt-5 mb-5">
+  <div>
 
+    <page-header></page-header>
 
-  index.vue
+    <Nuxt />
 
-  <NuxtLink to="/tours">tours Link</NuxtLink>
-
+    <page-footer></page-footer>
 
   </div>
 </template>
+
+
 
 <script>
 import PageHeader from '~/components/PageHeader.vue'
@@ -22,6 +24,4 @@ import PageFooter from '~/components/PageFooter.vue'
   
 </script>
 
-<style lang="scss" scoped>
 
-</style>
