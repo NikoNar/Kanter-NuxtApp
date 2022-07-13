@@ -1,10 +1,10 @@
 export default {
-  // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
+  ssr: false,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Kantar',
+    title: 'quickKantar',
     htmlAttrs: {
       lang: 'en'
     },
@@ -21,10 +21,13 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/assets/bootstrap/bootstrap.min.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+
+    {src: '~/assets/bootstrap/bootstrap.bundle.min.js'}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -36,8 +39,6 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/bootstrap
-    'bootstrap-vue/nuxt',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
